@@ -1,0 +1,2 @@
+"use strict";(self["webpackChunktraining"]=self["webpackChunktraining"]||[]).push([[39],{7039:function(n,t,e){e.r(t),e.d(t,{default:function(){return l}});var r=e(3396);function a(n,t,e,a,c,u){const i=(0,r.up)("van-nav-bar");return(0,r.wg)(),(0,r.iD)("div",null,[(0,r.Wm)(i,{title:"成绩","left-text":"返回","left-arrow":"",onClickLeft:a.back},null,8,["onClickLeft"])])}e(6265);var c={name:"Score",setup(){const n=()=>history.back();return{back:n}}},u=e(89);const i=(0,u.Z)(c,[["render",a]]);var l=i}}]);
+//# sourceMappingURL=39.934a1639.js.map

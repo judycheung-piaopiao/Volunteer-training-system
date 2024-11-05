@@ -1,0 +1,2 @@
+"use strict";(self["webpackChunktraining"]=self["webpackChunktraining"]||[]).push([[20],{4020:function(n,t,e){e.r(t),e.d(t,{default:function(){return l}});var r=e(3396);function a(n,t,e,a,i,u){const c=(0,r.up)("van-nav-bar");return(0,r.wg)(),(0,r.iD)("div",null,[(0,r.Wm)(c,{title:"设置","left-text":"返回","left-arrow":"",onClickLeft:a.back},null,8,["onClickLeft"])])}e(6265);var i={name:"Setting",setup(){const n=()=>history.back();return{back:n}}},u=e(89);const c=(0,u.Z)(i,[["render",a]]);var l=c}}]);
+//# sourceMappingURL=20.92455713.js.map

@@ -1,0 +1,2 @@
+"use strict";(self["webpackChunktraining"]=self["webpackChunktraining"]||[]).push([[749],{2749:function(n,t,e){e.r(t),e.d(t,{default:function(){return l}});var r=e(3396);function a(n,t,e,a,u,c){const i=(0,r.up)("van-nav-bar");return(0,r.wg)(),(0,r.iD)("div",null,[(0,r.Wm)(i,{title:"个人中心","left-text":"返回","left-arrow":"",onClickLeft:a.back},null,8,["onClickLeft"])])}e(6265);var u={name:"Person",setup(){const n=()=>history.back();return{back:n}}},c=e(89);const i=(0,c.Z)(u,[["render",a]]);var l=i}}]);
+//# sourceMappingURL=749.1c18ddde.js.map
