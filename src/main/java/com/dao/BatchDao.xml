@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.dao.BatchDao">
+    <insert id="CreateBatch">
+        INSERT INTO batch (`Name`,`Describe`) VALUES(#{Name},#{Describe})
+    </insert>
+    <delete id="DeleteBatch">
+        DELETE FROM batch where `No` = #{No}
+    </delete>
+    <select id="SelectAllBatch" resultType="com.entity.Batch">
+        select `No`,`Name`,`Describe` from batch
+    </select>
+    <select id="showBatch" resultType="com.entity.Batch">
+        select a.* from studentbatch b left join batch a on a.no = b.batch where b.Number = #{Number}
+    </select>
+    <update id="updateBatch">
+        UPDATE batch SET `Name` = #{Name},`Describe` = #{Describe} WHERE `No` = #{No}
+    </update>
+</mapper>

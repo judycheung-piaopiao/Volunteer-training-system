@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.dao.StudentDao">
+    <insert id="importStudent">
+        insert into studentbatch (`Name`,`Number`,`Email`,`Academy`,`Batch`,`Other`) values(#{Name},#{Number},#{Email},#{Academy},#{Batch},#{Other})
+    </insert>
+    <insert id="chooseclass">
+        insert into studentclass(`Name`,`Number`,`Class`,`Course`) values(#{Name},#{Number},#{Class},#{Course});
+    </insert>
+    <insert id="addStudentTeachtime">
+        insert into `studentteachtime`(`Name`,`Number`,`teachtime`)values (#{Name},#{Number},#{Teachtime});
+    </insert>
+    <delete id="exitClass">
+        delete from studentclass where `Number` = #{Number} and `Class` =#{Class}
+    </delete>
+    <delete id="exitTeachtime">
+        delete from studentteachtime where `Number` = #{Number} and `teachtime` =#{Teachtime}
+    </delete>
+    <select id="getStudent" resultType="com.entity.Student">
+        select * from studentbatch where `Email` = #{Email}
+    </select>
+    <select id="checkIfExisted" resultType="com.entity.Student">
+        select * from studentbatch where `Number` = #{Number} and `Batch` = #{Batch}
+    </select>
+    <select id="showStu" resultType="com.entity.Student">
+        select * from studentbatch where `Batch` = #{Batch}
+    </select>
+    <delete id="deleteStudent">
+        delete from studentbatch where `Number` = #{Number} and `Batch` = #{Batch}
+    </delete>
+    <select id="getStudentByClass" resultType="com.entity.Student">
+        select `Name`,`Number` from studentclass where `Class` = #{Classes}
+    </select>
+</mapper>
